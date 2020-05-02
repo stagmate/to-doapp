@@ -79,6 +79,7 @@ if (isset($_GET['del_task'])) {
                     <li>
                         <a href="#"><?php echo $_SESSION['name'];?></a>
                     </li>
+					
                     <li>
                         <a href="logout.php">Logout</a>
                     </li>
@@ -87,49 +88,8 @@ if (isset($_GET['del_task'])) {
             </div>
         </div>
     </nav>
-	<?php
-     echo   date("l"). "&nbsp&nbsp&nbsp" . date("d/m/Y")."<br>" ;
-	 ?>
-	 <div class="container">
-    	<h2 class="text-center">Todo List App</h2>
-
-        	<div class="form-group">
-        		<label for="itemInput">Add Item</label>
-        		<input type="text" class="form-control" name="" id="itemInput" >
-        	</div>
-			<form action="/action_page.php">
-  <label for="cars">Priority:</label>
-  <select id="Priority" name="Priority">
-    <option value="volvo">High</option>
-    <option value="saab">Medium</option>
-    <option value="fiat">Low</option>
-    
-  </select>
-  
-</form>
-                <button id="addButton" class="btn btn-primary">Add To List</button>
-				
-                <button id="clearButton" class="btn btn-danger">Clear Todo List</button>
-				 
-				 
-        <h3>Todo List</h3>
-        <ul id="todoList"></ul>
-
-    </div>
-
-
-            <p><a  href="logout.php" class="btn btn-primary btn-large">Logout</a>
-			<a  href="email.php" class="btn btn-primary btn-large">Email List</a>
-            </p>
-        </header>
-        <hr>
-
-      
-
-
-        </div>
-
-        <hr>
+	<ul id="todoList"></ul>
+	
 
 
     </div>
